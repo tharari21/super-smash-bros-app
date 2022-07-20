@@ -15,12 +15,20 @@ function App() {
     "Zelda",
     "Ken",
   ];
+
+  const renderFighters = () => {
+    return fighters.map((fighter, index) => (
+      <div>
+        <img
+          src={`https://www.smashbros.com/assets_v2/img/fighter/thumb_a/${fighter.toLowerCase()}.png`}
+        />
+      </div>
+    ));
+  };
   return (
     <div className="App">
       <h1>Fighters</h1>
-      <div className="fighters-grid">
-        
-      </div>
+      <div className="fighters-grid">{renderFighters()}</div>
     </div>
   );
 }
