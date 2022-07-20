@@ -21,7 +21,9 @@ function App() {
       <div>
         <img
           src={`https://www.smashbros.com/assets_v2/img/fighter/thumb_a/${fighter.toLowerCase()}.png`}
+          className="fighter-img"
         />
+        <h5 className="fighter-name">{fighter}</h5>
       </div>
     ));
   };
