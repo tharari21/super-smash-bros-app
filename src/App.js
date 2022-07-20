@@ -1,5 +1,5 @@
 import "./App.css";
-
+import Fighter from "./components/Fighter";
 function App() {
   const fighters = [
     "Roy",
@@ -16,21 +16,14 @@ function App() {
     "Ken",
   ];
 
-  const renderFighters = () => {
-    return fighters.map((fighter, index) => (
-      <div>
-        <img
-          src={`https://www.smashbros.com/assets_v2/img/fighter/thumb_a/${fighter.toLowerCase()}.png`}
-          className="fighter-img"
-        />
-        <h5 className="fighter-name">{fighter}</h5>
-      </div>
-    ));
-  };
   return (
     <div className="App">
       <h1>Fighters</h1>
-      <div className="fighters-grid">{renderFighters()}</div>
+      <div className="fighters-grid">
+        {fighters.map((fighter, index) => (
+          <Fighter key={index} fighter={fighter} />
+        ))}
+      </div>
     </div>
   );
 }
