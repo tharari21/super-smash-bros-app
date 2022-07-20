@@ -2,13 +2,13 @@ import React from "react";
 
 const Fighter = ({ fighter }) => {
   return (
-    <div>
+    <div style={{ backgroundColor: fighter.color }}>
       <img
-        src={`https://www.smashbros.com/assets_v2/img/fighter/thumb_a/${fighter.toLowerCase()}.png`}
+        src={`https://www.smashbros.com/assets_v2/img/fighter/thumb_a/${fighter.name.toLowerCase()}.png`}
         alt="Not found"
         className="fighter-img"
       />
-      <h5 className="fighter-name">{fighter}</h5>
+      <h5 className="fighter-name">{fighter.name}</h5>
     </div>
   );
 };

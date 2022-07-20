@@ -15,7 +15,6 @@
   width: 200px;
   position: relative;
   transition: transform .3s;
-  background-color: slategray;
 }
 
 .fighters-grid div:hover {
