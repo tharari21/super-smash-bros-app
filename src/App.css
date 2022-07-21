@@ -42,14 +42,16 @@ height: auto; /* by default this is true */
   width: 100%;
   top: 0; /* When you change the position you can edit the top left bottom and right */
   left: 0;
-  background-color:lightgreen;
-  z-index: 1; 
+  z-index: 1;
+  background-size: cover;
+  background-position: 50% 50%;
   /* The z-index property specifies the stack order of an element. 
   An element with greater stack order is always in front of an element with a lower stack order.*/
 }
-.char-model {
+#char-model {
+  width: 600px;
 
 }
-.char-name {
-  
+#char-name {
+
 }

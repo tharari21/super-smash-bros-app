@@ -33,7 +33,7 @@ function App() {
           />
         ))}
       </div>
-      {selectedFighter && <FighterScreen fighter={selectedFighter} />}
+      {selectedFighter && <FighterScreen selectedFighter={selectedFighter} />}
     </div>
   );
 }

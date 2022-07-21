@@ -1,12 +1,17 @@
 import React from "react";
-const FighterScreen = ({ fighter }) => {
+const FighterScreen = ({ selectedFighter }) => {
   return (
-    <div id="fighter-screen">
+    <div
+      id="fighter-screen"
+      style={{
+        backgroundImage: `url(https://www.smashbros.com/assets_v2/img/fighter/${selectedFighter.name.toLowerCase()}/bg.jpg)`,
+      }}
+    >
       <img
-        src={`https://www.smashbros.com/assets_v2/img/fighter/thumb_a/${fighter.name.toLowerCase()}.png`}
+        src={`https://www.smashbros.com/assets_v2/img/fighter/${selectedFighter.name.toLowerCase()}/main.png`}
         id="char-model"
       />
-      <h3 id="char-name">{fighter.name}</h3>
+      <h3 id="char-name">{selectedFighter.name}</h3>
     </div>
   );
 };
