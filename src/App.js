@@ -20,9 +20,7 @@ function App() {
     { name: "Ken", color: "firebrick" },
   ];
   const [selectedFighter, setSelectedFighter] = useState();
-  const handleClick = (fighter) => {
-    setSelectedFighter(fighter.name);
-  };
+
   return (
     <div className="App">
       <h1>Fighters</h1>
@@ -31,7 +29,7 @@ function App() {
           <Fighter
             key={index}
             fighter={fighter}
-            onSelectFighter={() => handleClick(fighter)}
+            setSelectedFighter={setSelectedFighter}
           />
         ))}
       </div>

@@ -1,8 +1,11 @@
 import React from "react";
 
-const Fighter = ({ fighter, onSelectFighter }) => {
+const Fighter = ({ fighter, setSelectedFighter }) => {
   return (
-    <div style={{ backgroundColor: fighter.color }} onClick={onSelectFighter}>
+    <div
+      style={{ backgroundColor: fighter.color }}
+      onClick={() => setSelectedFighter(fighter)}
+    >
       <img
         src={`https://www.smashbros.com/assets_v2/img/fighter/thumb_a/${fighter.name.toLowerCase()}.png`}
         alt="Not found"

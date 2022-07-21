@@ -36,3 +36,20 @@
   width: 100%;
 height: auto; /* by default this is true */
 }
+#fighter-screen {
+  position: fixed; /*Takes element out of the document flow - takes it out of regular flow. z-index is the z axis. x is left and right, y is up and down and z is whether its closer to you or away*/
+  height: 100vh; /* Because fighter screen is within another div, this will not take up the entire page*/
+  width: 100%;
+  top: 0; /* When you change the position you can edit the top left bottom and right */
+  left: 0;
+  background-color:lightgreen;
+  z-index: 1; 
+  /* The z-index property specifies the stack order of an element. 
+  An element with greater stack order is always in front of an element with a lower stack order.*/
+}
+.char-model {
+
+}
+.char-name {
+  
+}
